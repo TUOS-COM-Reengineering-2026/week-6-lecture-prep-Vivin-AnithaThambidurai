@@ -1,7 +1,7 @@
 # PART 1
 def is_palindrome(s):
-    # Check if a string is a palindrome or not.
-    # To make it simple, let's assume that an empty string is a palindrome.
+    if not isinstance(s, str):
+        return False
 
     left = 0
     right = len(s) - 1
@@ -13,8 +13,6 @@ def is_palindrome(s):
         right -= 1
 
     return True
-
-
 # PART 2
 def is_small(a):
     if a < 5:
